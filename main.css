@@ -37,13 +37,13 @@ table {
 	#p1-podium {
 		float: left;
 		position: relative;
-		bottom: 210px;
+		bottom: 234px;
 		left: 60px;
 	}
 	#p2-podium {
 		float: right;
 		position: relative;
-		bottom: 210px;
+		bottom: 234px;
 		right: 30px;
 	}
 	.player-initials {
