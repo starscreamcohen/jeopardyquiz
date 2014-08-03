@@ -3,6 +3,11 @@ body {
 	color: #fff;
 	background-color: rgb(0,0,26);
 }
+#logo {
+	display: block;
+	width: 30%;
+	margin: 0 auto;
+}
 
 table {
 	width: 55%;
@@ -37,27 +42,28 @@ table {
 	#p1-podium {
 		float: left;
 		position: relative;
-		bottom: 234px;
+		bottom: 284px;
 		left: 60px;
 	}
 	#p2-podium {
 		float: right;
 		position: relative;
-		bottom: 234px;
+		bottom: 284px;
 		right: 30px;
 	}
 	.player-initials {
 		position: absolute;
 		width: 102px;
-		top: 372px;
+		top: 512px;
+		font-family: 'Rock Salt', cursive;
 		text-align: center;
 		z-index: 1;
 	}
 	#p1-initials {
-		left: 70px;
+		left: 90px;
 	}
 	#p2-initials {
-		right: 89px;
+		right: 109px;
 	}
 		.player-initials p {
 			font-size: 2em;
