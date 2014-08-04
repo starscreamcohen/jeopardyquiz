@@ -8,6 +8,12 @@
 	<link rel="stylesheet" href="main.css">
 </head>
 <body>
+	<div class="overlay">
+		<form action="#">
+			<label>Enter Your Initials<input type="text" id="initials" onsubmit="getInitials();"></label>
+			<input class="submit" type="submit">
+		</form>
+	</div>
 	<img id="logo" src="images/jeopardy-logo.png">
 	<table>
 		<tr id="category-row">
@@ -64,10 +70,8 @@
 		<div class="player-initials" id="p1-initials">
 			<p>AAA</p>
 		</div>
-		<img class= "podium" id="p2-podium" src="images/jp-gamestation.png" alt="Player 2 Podium">
-		<div class="player-initials" id="p2-initials">
-			<p>AAA</p>
-		</div>
 	</div>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="app.js" type="text/javascript"></script>
 </body>
 </html>
