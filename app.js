@@ -23,7 +23,7 @@ function Question(clue, points, category) {
 Question.prototype.choices = [];
 
 
-var question1 = new Question("Who Comedy Duo Starred in Swingers?", 100, "90's Movies")
+var question1 = new Question("What Comedy Duo Starred in Swingers?", 100, "90's Movies")
 question1.choices = {0: "Adam Sandler & Rob Schneider", 1: "Jon Favreau & Vince Vaughan", 2: "John Goodman & Tim Blake Nelson", 3: "Dave Chappelle & Kevin Harland"}
 
 
