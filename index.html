@@ -14,10 +14,20 @@
 			<input class="submit" type="submit">
 		</form>
 	</div>
+	<div class="clue">
+	<p id="question"></p>
+		<form>
+			<label class="choice" id="choice-one"><input type="radio" name="clue"></label>
+			<label class="choice" id="choice-two"><input  type="radio" name="clue"></label>
+			<label class="choice" id="choice-three"><input id="choice-three" type="radio" name="clue"></label>
+			<label class="choice" id="choice-four"><input id="choice-four" type="radio" name="clue"></label>
+			<input type="submit">
+		</form>
+	</div>
 	<img id="logo" src="images/jeopardy-logo.png">
 	<table>
 		<tr id="category-row">
-			<th>Category One</th>
+			<th id="category-one"></th>
 			<th>Category Two</th>
 			<th>Category Three</th>
 			<th>Category Four</th>
@@ -25,7 +35,7 @@
 			<th>Category Six</th>
 		</tr>
 		<tr>
-			<td>$100</td>
+			<td class="active" id="question-one">$100</td>
 			<td>$100</td>
 			<td>$100</td>
 			<td>$100</td>
@@ -33,7 +43,7 @@
 			<td>$100</td>
 		</tr>
 		<tr>
-			<td>$200</td>
+			<td class="active">$200</td>
 			<td>$200</td>
 			<td>$200</td>
 			<td>$200</td>
@@ -41,7 +51,7 @@
 			<td>$200</td>
 		</tr>
 		<tr>
-			<td>$300</td>
+			<td class="active">$300</td>
 			<td>$300</td>
 			<td>$300</td>
 			<td>$300</td>
@@ -49,7 +59,7 @@
 			<td>$300</td>
 		</tr>
 		<tr>
-			<td>$400</td>
+			<td class="active">$400</td>
 			<td>$400</td>
 			<td>$400</td>
 			<td>$400</td>
@@ -57,7 +67,7 @@
 			<td>$400</td>
 		</tr>
 		<tr>
-			<td>$500</td>
+			<td class="active">$500</td>
 			<td>$500</td>
 			<td>$500</td>
 			<td>$500</td>
@@ -67,8 +77,11 @@
 	</table>
 	<div id="player-section">
 		<img class="podium" id="p1-podium" src="images/jp-gamestation.png" alt="Player 1 Podium">
+		<div class="player-score" id="p1-score">
+			<span></span>
+		</div>
 		<div class="player-initials" id="p1-initials">
-			<p>AAA</p>
+			<p></p>
 		</div>
 	</div>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>

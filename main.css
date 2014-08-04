@@ -6,13 +6,15 @@ body {
 
 .overlay {
 	display: none;
-	position: relative;
+	position: absolute;
+	top: 130px;
+	left: 480px;
 	width: 721px;
 	height: 360px;
 	background-size: 721px 360px;
 	background-image: url('images/jeopardy-overlay.jpg');
 	background-repeat: no-repeat;
-	opacity: .8;
+	opacity: 1;
 }
 	.overlay form {
 		position: absolute;
@@ -25,6 +27,28 @@ body {
 	}
 	.overlay input {
 		margin-left: 10px;
+	}
+
+.clue {
+	display: none;
+	position: absolute;
+	top: 250px;
+	left: 524px;
+	width: 625px;
+	height: 380px;
+	background-color: #101A7C;
+	z-index: 2;
+}
+	#question {
+		margin: 50px 0;
+		text-align: center;
+		font-size: 1.8em;
+	}
+	.choice {
+		display: inline-block;
+		width: 47%;
+		margin-bottom: 30px;
+		font-size: 1.3em;
 	}
 
 #logo {
@@ -66,19 +90,28 @@ table {
 	#p1-podium {
 		float: left;
 		position: relative;
-		bottom: 284px;
+		bottom: 287px;
 		left: 60px;
 	}
 	#p2-podium {
 		float: right;
 		position: relative;
-		bottom: 284px;
+		bottom: 287px;
 		right: 30px;
 	}
+	.player-score {
+		position: relative;
+		bottom: 520px;
+		left: 180px;
+		width: 102px;
+	}
+		.player-score span {
+			font-size: 1.5em;
+		}
 	.player-initials {
 		position: absolute;
 		width: 102px;
-		top: 512px;
+		top: 520px;
 		font-family: 'Rock Salt', cursive;
 		text-align: center;
 		z-index: 1;
