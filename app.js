@@ -3,27 +3,27 @@ function categoryObj(category, id) {
 	this.id = id; 
 }
 
-function Question(clue, choices, points, category_id) {
+var movie = new categoryObj("90's Movies", 0);
+var capitals = new categoryObj("State Capitals", 1);
+
+function Question(clue, category_id, choices) {
 	this.clue = clue;
-	//choices should be an array
-	this.points = points;
 	this.category_id = category_id;
 }
+	Question.prototype.choices = [];
 
-Question.prototype.choices = [];
+var question = new Array();
+question[0] = new Question("What Comedy Duo Starred in Swingers?", movie);
+question[0].choices = {0: "Adam Sandler & Rob Schneider", 1: "Jon Favreau & Vince Vaughan", 2: "John Goodman & Tim Blake Nelson", 3: "Dave Chappelle & Kevin Harland"}
 
 
-var question1 = new Question("What Comedy Duo Starred in Swingers?", 100, "90's Movies")
-question1.choices = {0: "Adam Sandler & Rob Schneider", 1: "Jon Favreau & Vince Vaughan", 2: "John Goodman & Tim Blake Nelson", 3: "Dave Chappelle & Kevin Harland"}
+question[1] = new Question("What's the Capital of Vermont", capitals);
 
-//create pictures for it
+//model name, picture and update score
 function Player(score) {
 	this.score = score;
 }
 
-var player1 = new Player(0);
-
-$('#p1-score').children('span').append(player1.score);
 
 function getInitials() {
  player1.initials = document.getElementById('initials').value; 
@@ -35,19 +35,5 @@ function getInitials() {
 
 
 $(document).ready(function(){
-	$('.submit').on('click', function() {
-		getInitials();
-		$('#p1-initials').children('p').append(player1.initials);
-		$('.overlay').hide();
-	});
-	$('.active').on('click', function(){
-		$(".clue").show();
-	});
-	$('#category-one').append(question1.category);
-	$('.clue').children('#question').append(question1.clue);
-	$('#choice-one').append(question1.choices[0]);
-	$('#choice-two').append(question1.choices[1]);
-	$('#choice-three').append(question1.choices[2]);
-	$('#choice-four').append(question1.choices[3]);
 });
 
