@@ -1,3 +1,20 @@
+function categoryObj(category, id) {
+	this.category = category; 
+	this.id = id; 
+}
+
+function Question(clue, choices, points, category_id) {
+	this.clue = clue;
+	//choices should be an array
+	this.points = points;
+	this.category_id = category_id;
+}
+
+Question.prototype.choices = [];
+
+
+var question1 = new Question("What Comedy Duo Starred in Swingers?", 100, "90's Movies")
+question1.choices = {0: "Adam Sandler & Rob Schneider", 1: "Jon Favreau & Vince Vaughan", 2: "John Goodman & Tim Blake Nelson", 3: "Dave Chappelle & Kevin Harland"}
 
 //create pictures for it
 function Player(score) {
@@ -14,17 +31,6 @@ function getInitials() {
 }
 
 
-function Question(clue, points, category) {
-	this.clue = clue;
-	this.points = points;
-	this.category = category;
-}
-
-Question.prototype.choices = [];
-
-
-var question1 = new Question("What Comedy Duo Starred in Swingers?", 100, "90's Movies")
-question1.choices = {0: "Adam Sandler & Rob Schneider", 1: "Jon Favreau & Vince Vaughan", 2: "John Goodman & Tim Blake Nelson", 3: "Dave Chappelle & Kevin Harland"}
 
 
 
