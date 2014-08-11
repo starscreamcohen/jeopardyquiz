@@ -74,6 +74,7 @@ table {
 		}
 		th {
 			font-size: 2em;
+			vertical-align: middle;
 		}
 		td {
 			color: #DAA520;

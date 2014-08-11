@@ -1,24 +1,28 @@
 $(document).ready(function(){
 });
 
-function categoryObj(category_title) {
+function Category(category_title) {
 	this.category_title = category_title; 
 }
 var category = new Array();
-category[0] = new categoryObj("Movie Duos");
-category[1] = new categoryObj("State Capitals");
-category[2] = new categoryObj("What's In A Group");
-category[3] = new categoryObj("SNL Quotes");
-category[4] = new categoryObj("TV Potpourri");
-category[5] = new categoryObj("Presidential Moments")
+category[0] = new Category("Movie Duos");
+category[1] = new Category("State Capitals");
+category[2] = new Category("What's In A Group");
+category[3] = new Category("SNL Quotes");
+category[4] = new Category("TV Potpourri");
+category[5] = new Category("Presidential Moments")
 
-function init(){ 
-	for (i = 0; i < category.length; i++) {
-	  for (category_title in category[i]) {
-	    $('th').append(category[i].category_title);
-	  }
-	}
+
+var cells = $("#category-row th");
+for (var i = 0; i < cells.length; i++) {
+	cell = cells[i];
+	$(cell).append(category[i].category_title);
 }
+
+
+
+
+
 
  function Question(clue, category_id, choices) {
 	this.clue = clue;
