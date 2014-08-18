@@ -11,18 +11,16 @@
 	<div class="overlay">
 		<form action="#">
 			<label>Enter Your Initials<input type="text" id="initials" onsubmit="getInitials();"></label>
-			<input class="submit" type="submit">
+			<input class="enter" type="submit">
 		</form>
 	</div>
 	<div class="clue">
 	<p id="question"></p>
-		<form>
-			<label class="choice" id="choice-one"><input type="radio" name="clue"></label>
-			<label class="choice" id="choice-two"><input  type="radio" name="clue"></label>
-			<label class="choice" id="choice-three"><input id="choice-three" type="radio" name="clue"></label>
-			<label class="choice" id="choice-four"><input id="choice-four" type="radio" name="clue"></label>
-			<input type="submit">
-		</form>
+		<label class="choice" id="choice-one"><input type="radio" name="clue"></label>
+		<label class="choice" id="choice-two"><input  type="radio" name="clue"></label>
+		<label class="choice" id="choice-three"><input id="choice-three" type="radio" name="clue"></label>
+		<label class="choice" id="choice-four"><input id="choice-four" type="radio" name="clue"></label>
+		<input type="submit" class="submit">
 	</div>
 	<img id="logo" src="images/jeopardy-logo.png">
 	<table>
@@ -35,44 +33,44 @@
 			<th></th>
 		</tr>
 		<tr>
-			<td class="active" id="question-one">$100</td>
-			<td>$100</td>
-			<td>$100</td>
-			<td>$100</td>
-			<td>$100</td>
-			<td>$100</td>
+			<td id="r1c1">$100</td>
+			<td id="r1c2">$100</td>
+			<td id="r1c3">$100</td>
+			<td id="r1c4">$100</td>
+			<td id="r1c5">$100</td>
+			<td id="r1c5">$100</td>
 		</tr>
 		<tr>
-			<td class="active">$200</td>
-			<td>$200</td>
-			<td>$200</td>
-			<td>$200</td>
-			<td>$200</td>
-			<td>$200</td>
+			<td id="r2c1">$200</td>
+			<td id="r2c2">$200</td>
+			<td id="r2c3">$200</td>
+			<td id="r2c4">$200</td>
+			<td id="r2c5">$200</td>
+			<td id="r2c6">$200</td>
 		</tr>
 		<tr>
-			<td class="active">$300</td>
-			<td>$300</td>
-			<td>$300</td>
-			<td>$300</td>
-			<td>$300</td>
-			<td>$300</td>
+			<td id="r3c1">$300</td>
+			<td id="r3c2">$300</td>
+			<td id="r3c3">$300</td>
+			<td id="r3c4">$300</td>
+			<td id="r3c5">$300</td>
+			<td id="r3c6">$300</td>
 		</tr>
 		<tr>
-			<td class="active">$400</td>
-			<td>$400</td>
-			<td>$400</td>
-			<td>$400</td>
-			<td>$400</td>
-			<td>$400</td>
+			<td id="r4c1">$400</td>
+			<td id="r4c2">$400</td>
+			<td id="r4c3">$400</td>
+			<td id="r4c4">$400</td>
+			<td id="r4c5">$400</td>
+			<td id="r4c6">$400</td>
 		</tr>
 		<tr>
-			<td class="active">$500</td>
-			<td>$500</td>
-			<td>$500</td>
-			<td>$500</td>
-			<td>$500</td>
-			<td>$500</td>
+			<td id="r5c1">$500</td>
+			<td id="r5c2">$500</td>
+			<td id="r5c3">$500</td>
+			<td id="r5c4">$500</td>
+			<td id="r5c5">$500</td>
+			<td id="r5c6">$500</td>
 		</tr>
 	</table>
 	<div id="player-section">
@@ -83,6 +81,10 @@
 		<div class="player-initials" id="p1-initials">
 			<p></p>
 		</div>
+	</div>
+	<div id="questions">
+		<ul>
+		</ul>
 	</div>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script src="app.js" type="text/javascript"></script>
