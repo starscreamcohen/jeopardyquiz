@@ -107,7 +107,7 @@ function init() {
 
 //Randomize the questions
 //Must match their specific category
-var questionListItems = $("#questions ul li");
+var questionListItems = $("#questions .clue li");
 	for (var c = 0; c < questionListItems.length; c++) {
 		questionList = questionListItems[c];
 		$(questionList).append(question[c].clue);
