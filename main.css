@@ -44,12 +44,7 @@ body {
 		text-align: center;
 		font-size: 1.8em;
 	}
-	.choice {
-		display: inline-block;
-		width: 47%;
-		margin-bottom: 30px;
-		font-size: 1.3em;
-	}
+
 
 #logo {
 	display: block;
@@ -81,6 +76,10 @@ table {
 			font-size: 3.5em;
 			cursor: pointer;
 		}
+			.question-cell {
+				text-decoration: none;
+				color: #fff;
+			}
 
 #player-section {
 	margin-right: 3%;

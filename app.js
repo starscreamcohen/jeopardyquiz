@@ -1,9 +1,9 @@
 $(document).ready(function(){
-	$("td").click(function(){
-		$(".clue").show();
+	$("a.question-cell").on("click", function(){
+		$(this.hash).show();
 	});
-	$(".submit").click(function(){
-		$(".clue").remove();
+	$(".submit").on("click", function(){
+		$(".clue").hide();
 	});
 });
 
@@ -19,13 +19,7 @@ category[4] = new Category("TV Potpourri");
 category[5] = new Category("Presidential Moments")
 
 
-
-
-
-
-
-
- function Question(clue, category_id, choices) {
+function Question(clue, category_id, choices) {
 	this.clue = clue;
 	this.category_id = category_id;
 }
@@ -105,12 +99,13 @@ function init() {
 		$(cell).append(category[i].category_title);
 	}
 
-//Randomize the questions
-//Must match their specific category
-var questionListItems = $("#questions .clue li");
-	for (var c = 0; c < questionListItems.length; c++) {
-		questionList = questionListItems[c];
+
+var questionLists = $("#questions .clue li");
+	for (var c = 0; c < questionLists.length; c++) {
+		questionList = $(questionLists[c]);
 		$(questionList).append(question[c].clue);
+		$(questionList).children("input").append("<label>" + question[c].choices + "</label>")
+		
 	}
 }init();
  
