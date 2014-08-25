@@ -29,21 +29,7 @@ body {
 		margin-left: 10px;
 	}
 
-.clue {
-	display: none;
-	position: absolute;
-	top: 250px;
-	left: 524px;
-	width: 625px;
-	height: 380px;
-	background-color: #101A7C;
-	z-index: 2;
-}
-	#question {
-		margin: 50px 0;
-		text-align: center;
-		font-size: 1.8em;
-	}
+
 
 
 #logo {
@@ -125,3 +111,15 @@ table {
 		.player-initials p {
 			font-size: 2em;
 		}
+
+.question {
+	display: none;
+	position: absolute;
+	top: 250px;
+	left: 524px;
+	width: 625px;
+	height: 380px;
+	padding: 20px;
+	background-color: #101A7C;
+	z-index: 2;
+}
