@@ -19,12 +19,24 @@ categoryArr[4] = new Category("TV Potpourri");
 categoryArr[5] = new Category("Presidential Moments")
 
 
-function Question(clue, category_id, choices, correct_answer) {
+
+function Question(clue, category_id, choices, correct_answer, addPoints) {
 	this.clue = clue;
 	this.category_id = category_id;
 	this.choices = choices;
 	this.correct_answer = correct_answer;
+	this.addPoints = addPoints;
 }
+ 
+ var points = null;
+ function addPoints(obj, points) {
+		points = $(obj).attr("data-points");
+		parseInt(points);
+		return points;
+	}
+
+	
+
 
 var questionArr = new Array();
 questionArr[0] = new Question("Who starred as the dynamic duo in Batman Forever", categoryArr[0]); 
@@ -125,6 +137,7 @@ questionArr[28].correct_answer = questionArr[0].choices["option1"];
 questionArr[29] = new Question("He was in office during Custer's Last Stand", categoryArr[5]);
 questionArr[29].choices = {option1: "Ulysses S. Grant", option2: "Andrew Johnson", option3: "Rutherford B. Hayes", option4: "James Garfield"};
 questionArr[29].correct_answer = questionArr[0].choices["option1"];
+
 
 
 function init() {
