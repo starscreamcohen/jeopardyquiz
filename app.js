@@ -105,8 +105,7 @@ function init() {
 		$(cell).append(category[i].category_title);
 	}
 
-//Randomize the questions
-//Must match their specific category
+// Loops through 
 var questionListItems = $("#questions .clue li");
 	for (var c = 0; c < questionListItems.length; c++) {
 		questionList = questionListItems[c];
@@ -116,7 +115,13 @@ var questionListItems = $("#questions .clue li");
  
 //model name, picture and update score
 
+// Play with this function for score keeping
 
+  var moneyValues = [100, 200, 300, 400, 500];
+  var jeopardyBoard = [];
+  for (x = 0; x < 6; x++) {
+  jeopardyBoard.push(moneyValues); 
+	} 
 
 
 
