@@ -29,27 +29,8 @@ body {
 		margin-left: 10px;
 	}
 
-.clue {
-	display: none;
-	position: absolute;
-	top: 250px;
-	left: 524px;
-	width: 625px;
-	height: 380px;
-	background-color: #101A7C;
-	z-index: 2;
-}
-	#question {
-		margin: 50px 0;
-		text-align: center;
-		font-size: 1.8em;
-	}
-	.choice {
-		display: inline-block;
-		width: 47%;
-		margin-bottom: 30px;
-		font-size: 1.3em;
-	}
+
+
 
 #logo {
 	display: block;
@@ -81,6 +62,10 @@ table {
 			font-size: 3.5em;
 			cursor: pointer;
 		}
+			.question-cell {
+				text-decoration: none;
+				color: #fff;
+			}
 
 #player-section {
 	margin-right: 3%;
@@ -126,3 +111,15 @@ table {
 		.player-initials p {
 			font-size: 2em;
 		}
+
+.question {
+	display: none;
+	position: absolute;
+	top: 250px;
+	left: 524px;
+	width: 625px;
+	height: 380px;
+	padding: 20px;
+	background-color: #101A7C;
+	z-index: 2;
+}
