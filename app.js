@@ -138,6 +138,7 @@ function init() {
 	}
 
 
+
 var questionLists = $("#question-wrapper .question");
 	for (var c = 0; c < questionLists.length; c++) {
 		questionList = $(questionLists[c]);
@@ -151,7 +152,13 @@ var questionLists = $("#question-wrapper .question");
  
 //model name, picture and update score
 
+// Play with this function for score keeping
 
+  var moneyValues = [100, 200, 300, 400, 500];
+  var jeopardyBoard = [];
+  for (x = 0; x < 6; x++) {
+  jeopardyBoard.push(moneyValues); 
+	} 
 
 
 
